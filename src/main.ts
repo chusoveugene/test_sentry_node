@@ -8,6 +8,12 @@ async function bootstrap() {
 
   Sentry.init({
     dsn: 'https://b9b4b621079539e8d304f6c428e2a272@o4506858931224576.ingest.us.sentry.io/4507062131032064',
+    release: '3.8.0',
+    sampleRate: 1,
+    debug: true,
+    environment: 'Production',
+    enabled: true,
+    enableTracing: true,
     integrations: [nodeProfilingIntegration()],
     // Performance Monitoring
     tracesSampleRate: 1.0, //  Capture 100% of the transactions

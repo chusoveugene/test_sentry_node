@@ -15,7 +15,7 @@ import {
 } from '@nestjs/common';
 
 @Injectable()
-export class SentryInterceptor implements NestInterceptor {
+export class AppInterceptor implements NestInterceptor {
   private get client() {
     return Sentry;
   }
