@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   Sentry.init({
-    dsn: 'https://b9b4b621079539e8d304f6c428e2a272@o4506858931224576.ingest.us.sentry.io/4507062131032064',
+    dsn: 'http://cb89d9453ca8a09b0200aa4963a9be6c@sentry.ozed.ru/2',
     release: '3.8.0',
     sampleRate: 1,
     debug: true,
